@@ -9,11 +9,11 @@ const hasCapitalLetterInPassword = password.match(/[A-ZÁÉÍÓÚÀÈÌÒÙ]/) !
 const isValidPassword =
   password.length >= 8 && hasDigitInPassword && hasCapitalLetterInPassword;
 const isValidConfirmPassword = password === confirmPassword;
-const iValidAge = age >= 18;
+const isValidAge = age >= 18;
 
 console.log(`El nombre de usuario es válido: ${isValidUsername}`);
 console.log(`La contraseña es válida: ${isValidPassword}`);
 console.log(
   `La repetición de la contraseña es válida: ${isValidConfirmPassword}`
 );
-console.log(`Es mayor de edad: ${iValidAge}`);
+console.log(`Es mayor de edad: ${isValidAge}`);
